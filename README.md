@@ -10,8 +10,8 @@ Notebooks:
 
 ### 1. Install `git` and `gh`
 
-- [`git`](https://git-scm.com/downloads) — version control, needed to clone and work with this repo.
-- [`gh`](https://cli.github.com/) — the GitHub CLI, useful for cloning, opening PRs, etc. from the terminal.
+- [`git`](https://git-scm.com/downloads): version control, needed to clone and work with this repo.
+- [`gh`](https://cli.github.com/): the GitHub CLI, useful for cloning, opening PRs, etc. from the terminal.
 
 ### 2. Install `uv`
 
@@ -77,16 +77,16 @@ Same as above, but the marimo server listens on all interfaces (`0.0.0.0`), so i
 
 Contains the course slides as a [marimo](https://marimo.io) notebook:
 
-- `1_Python_Basics.py` — the notebook itself (336 cells). It's a plain Python file with dependencies declared inline (PEP 723) at the top of the file, so it's reproducible without a separate `requirements.txt`.
-- `layouts/1_Python_Basics.slides.json` — the presentation configuration (which cells are `slide`, `sub-slide`, `fragment`, whether to show code, etc.), linked to the notebook via `layout_file` in `app = marimo.App(...)`.
+- `1_Python_Basics.py`: the notebook itself (336 cells). It's a plain Python file with dependencies declared inline (PEP 723) at the top of the file, so it's reproducible without a separate `requirements.txt`.
+- `layouts/1_Python_Basics.slides.json`: the presentation configuration (which cells are `slide`, `sub-slide`, `fragment`, whether to show code, etc.), linked to the notebook via `layout_file` in `app = marimo.App(...)`.
 
 ### `src/`
 
-One Python module per topic covered in the presentation (`variables_types.py`, `lists.py`, `functions.py`, `classes.py`, etc.). Each file contains functions/classes with a `# TODO` and `raise NotImplementedError(...)` in place of the implementation — that's where course participants write their own code.
+One Python module per topic covered in the presentation (`variables_types.py`, `lists.py`, `functions.py`, `classes.py`, etc.). Each file contains functions/classes with a `# TODO` and `raise NotImplementedError(...)` in place of the implementation. That's where course participants write their own code.
 
 ### `tests/`
 
-One test file per module in `src/` (same name, `test_` prefix). A test file only passes once every `NotImplementedError` in the matching `src/` module has been replaced with working code — this is how you check you've correctly solved each exercise.
+One test file per module in `src/` (same name, `test_` prefix). A test file only passes once every `NotImplementedError` in the matching `src/` module has been replaced with working code. This is how you check you've correctly solved each exercise.
 
 ### `solutions/`
 
@@ -102,10 +102,10 @@ uv run scripts/example.py
 
 ### Root files
 
-- `pyproject.toml` — project metadata and dependencies (currently just `pytest`), plus the pytest configuration (`testpaths = ["tests"]`) so `pytest`/`uv run pytest` knows where to look.
-- `.python-version` — pins the exact Python version (`3.14`) `uv` uses for this project's virtual environment, so everyone gets the same interpreter instead of whatever happens to be newest. Set with `uv python pin <version>`.
-- `uv.lock` — the exact, resolved versions of every dependency, generated and updated automatically by `uv`. Commit it (don't edit it by hand) so everyone gets the same environment.
-- `justfile` — the recipes behind the `just` commands described above.
-- `LICENSE` — MIT license.
-- `.gitignore` — excludes local/disposable artifacts (`.venv/`, `__pycache__/`, `.pytest_cache/`, etc.) from version control. It also currently excludes `solutions/`, so the worked solutions aren't published to the repo for now; remove that line once you're ready to share them.
-- `README.md` — this file.
+- `pyproject.toml`: project metadata and dependencies (currently just `pytest`), plus the pytest configuration (`testpaths = ["tests"]`) so `pytest`/`uv run pytest` knows where to look.
+- `.python-version`: pins the exact Python version (`3.14`) `uv` uses for this project's virtual environment, so everyone gets the same interpreter instead of whatever happens to be newest. Set with `uv python pin <version>`.
+- `uv.lock`: the exact, resolved versions of every dependency, generated and updated automatically by `uv`. Commit it (don't edit it by hand) so everyone gets the same environment.
+- `justfile`: the recipes behind the `just` commands described above.
+- `LICENSE`: MIT license.
+- `.gitignore`: excludes local/disposable artifacts (`.venv/`, `__pycache__/`, `.pytest_cache/`, etc.) from version control. It also currently excludes `solutions/`, so the worked solutions aren't published to the repo for now; remove that line once you're ready to share them.
+- `README.md`: this file.
