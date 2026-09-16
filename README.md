@@ -3,7 +3,7 @@
 [![Google Drive](https://img.shields.io/badge/Google%20Drive-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/drive/u/0/folders/19UCqFNGHW__DGDzOHMjPInEKhFXkhhul)
 
 Notebooks:
-* 1 Python Basics [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1psEqjZHw6ETwG4rxuaBJ98PnrQOglhSB)[![Open with marimo](https://marimo.io/shield.svg)](https://molab.marimo.io/)
+* 1 Python Basics [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1psEqjZHw6ETwG4rxuaBJ98PnrQOglhSB) [![Open with marimo](https://marimo.io/shield.svg)](https://molab.marimo.io/)
 * 2 Python Essentials [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/12mLPIQ29SC555kODibm_OQBqjvLOWH_P)
 
 ## Setup
