@@ -3,9 +3,20 @@
 One module per topic covered in `presentations/1_Python_Basics.py`. Each
 file contains functions (or classes) with a `# TODO` and
 `raise NotImplementedError(...)` in place of the implementation: fill
-them in, then check your work with the matching file in `tests/` (see the
-root `README.md` for how to run them with `just test`). If you get stuck,
-`solutions/` has a worked implementation of every exercise here.
+them in, then check your work with the matching file in `tests/`. If you
+get stuck, `solutions/` has a worked implementation of every exercise here.
+
+From the repo root, run the whole test suite with:
+
+```bash
+just test
+```
+
+or a single module (e.g. just the Lists exercises):
+
+```bash
+just test tests/test_lists.py
+```
 
 ## Topics
 
