@@ -1,3 +1,7 @@
+# on Windows, run recipes with PowerShell instead of sh (which isn't
+# available there unless Git Bash/WSL is on PATH)
+set windows-shell := ["powershell.exe", "-NoLogo", "-Command"]
+
 # list available recipes
 default:
     @just --list
